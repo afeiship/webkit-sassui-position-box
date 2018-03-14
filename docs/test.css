@@ -21,28 +21,30 @@
   transform: translate(-50%, -50%);
 }
 
-.webkit-sassui-position-box > *[data-direction=top] {
-  top: 0;
+.webkit-sassui-position-box > *[data-direction=top], .webkit-sassui-position-box > *[data-direction=bottom] {
   left: 50%;
   transform: translateX(-50%);
+}
+
+.webkit-sassui-position-box > *[data-direction=left], .webkit-sassui-position-box > *[data-direction=right] {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.webkit-sassui-position-box > *[data-direction=top] {
+  top: 0;
 }
 
 .webkit-sassui-position-box > *[data-direction=right] {
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .webkit-sassui-position-box > *[data-direction=bottom] {
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .webkit-sassui-position-box > *[data-direction=left] {
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .webkit-sassui-position-box > *[data-direction=lt] {

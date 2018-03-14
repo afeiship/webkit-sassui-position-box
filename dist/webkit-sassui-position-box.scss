@@ -19,25 +19,29 @@ $webkit-sassui-position-box-list:(relative, absolute, fixed);
       transform: translate(-50%, -50%);
     }
 
-    &[data-direction=top]{
-      top:0;
+    &[data-direction=top],
+    &[data-direction=bottom]{
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    &[data-direction=left],
+    &[data-direction=right]{
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &[data-direction=top]{
+      top:0;
     }
     &[data-direction=right]{
       right: 0;
-      top: 50%;
-      transform: translateY(-50%);
     }
     &[data-direction=bottom]{
       bottom:0;
-      left: 50%;
-      transform: translateX(-50%);
     }
     &[data-direction=left]{
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
     }
     &[data-direction=lt]{
       left: 0;
