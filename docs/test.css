@@ -1,13 +1,13 @@
 /*webkit-sassui-position-box Start*/
-.webkit-sassui-position-box[data-relative=relative] {
+.webkit-sassui-position-box[data-position=relative] {
   position: relative;
 }
 
-.webkit-sassui-position-box[data-absolute=absolute] {
+.webkit-sassui-position-box[data-position=absolute] {
   position: absolute;
 }
 
-.webkit-sassui-position-box[data-fixed=fixed] {
+.webkit-sassui-position-box[data-position=fixed] {
   position: fixed;
 }
 
@@ -77,9 +77,15 @@
   border: 1px solid red;
 }
 
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 .box {
-  width: 300px;
-  height: 300px;
+  width: 80%;
+  height: 80%;
+  margin: 20px auto;
 }
 
 .box span {

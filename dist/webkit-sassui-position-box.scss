@@ -2,7 +2,7 @@
 $webkit-sassui-position-box-list:(relative, absolute, fixed);
 .webkit-sassui-position-box{
   @each $value in $webkit-sassui-position-box-list{
-    &[data-#{$value}=#{$value}]{
+    &[data-position=#{$value}]{
       position: $value;
     }
   }

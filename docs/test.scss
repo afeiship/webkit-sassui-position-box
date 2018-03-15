@@ -3,9 +3,15 @@
   border:1px solid red;
 }
 
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
+
 .box{
-  width: 300px;
-  height: 300px;
+  width: 80%;
+  height: 80%;
+  margin:20px auto;
 
   span{
     display: inline-block;
