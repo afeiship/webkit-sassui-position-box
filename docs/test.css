@@ -11,65 +11,62 @@
   position: fixed;
 }
 
-.webkit-sassui-position-box > *[data-direction] {
+.webkit-sassui-position-box [data-direction] {
   position: absolute;
 }
 
-.webkit-sassui-position-box > *[data-direction=center] {
+.webkit-sassui-position-box [data-direction=center] {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.webkit-sassui-position-box > *[data-direction=top], .webkit-sassui-position-box > *[data-direction=bottom] {
+.webkit-sassui-position-box [data-direction=top],
+.webkit-sassui-position-box [data-direction=bottom] {
   left: 50%;
   transform: translateX(-50%);
 }
 
-.webkit-sassui-position-box > *[data-direction=left], .webkit-sassui-position-box > *[data-direction=right] {
+.webkit-sassui-position-box [data-direction=left],
+.webkit-sassui-position-box [data-direction=right] {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.webkit-sassui-position-box > *[data-direction=top] {
+.webkit-sassui-position-box [data-direction=top] {
   top: 0;
 }
 
-.webkit-sassui-position-box > *[data-direction=right] {
+.webkit-sassui-position-box [data-direction=right] {
   right: 0;
 }
 
-.webkit-sassui-position-box > *[data-direction=bottom] {
+.webkit-sassui-position-box [data-direction=bottom] {
   bottom: 0;
 }
 
-.webkit-sassui-position-box > *[data-direction=left] {
+.webkit-sassui-position-box [data-direction=left] {
   left: 0;
 }
 
-.webkit-sassui-position-box > *[data-direction=lt] {
+.webkit-sassui-position-box [data-direction=tl] {
   left: 0;
   top: 0;
 }
 
-.webkit-sassui-position-box > *[data-direction=tr] {
+.webkit-sassui-position-box [data-direction=tr] {
   top: 0;
   right: 0;
 }
 
-.webkit-sassui-position-box > *[data-direction=rb] {
+.webkit-sassui-position-box [data-direction=br] {
   right: 0;
   bottom: 0;
 }
 
-.webkit-sassui-position-box > *[data-direction=bl] {
+.webkit-sassui-position-box [data-direction=bl] {
   bottom: 0;
   left: 0;
-}
-
-.webkit-sassui-position-box > *[data-direction=lt] {
-  left: 0;
-  top: 0;
 }
 
 /*webkit-sassui-position-box End*/

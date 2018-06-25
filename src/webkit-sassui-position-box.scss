@@ -8,61 +8,55 @@ $webkit-sassui-position-box-list:(relative, absolute, fixed);
   }
 
 
-  > * {
-    &[data-direction]{
-      position: absolute;
-    }
+  [data-direction]{
+    position: absolute;
+  }
 
-    &[data-direction=center]{
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
+  [data-direction=center]{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    &[data-direction=top],
-    &[data-direction=bottom]{
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  [data-direction=top],
+  [data-direction=bottom]{
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    &[data-direction=left],
-    &[data-direction=right]{
-      top: 50%;
-      transform: translateY(-50%);
-    }
+  [data-direction=left],
+  [data-direction=right]{
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-    &[data-direction=top]{
-      top:0;
-    }
-    &[data-direction=right]{
-      right: 0;
-    }
-    &[data-direction=bottom]{
-      bottom:0;
-    }
-    &[data-direction=left]{
-      left: 0;
-    }
-    &[data-direction=lt]{
-      left: 0;
-      top: 0;
-    }
-    &[data-direction=tr]{
-      top: 0;
-      right: 0;
-    }
-    &[data-direction=rb]{
-      right: 0;
-      bottom: 0;
-    }
-    &[data-direction=bl]{
-      bottom: 0;
-      left: 0;
-    }
-    &[data-direction=lt]{
-      left:0;
-      top:0;
-    }
+  [data-direction=top]{
+    top:0;
+  }
+  [data-direction=right]{
+    right: 0;
+  }
+  [data-direction=bottom]{
+    bottom:0;
+  }
+  [data-direction=left]{
+    left: 0;
+  }
+  [data-direction=tl]{
+    left: 0;
+    top: 0;
+  }
+  [data-direction=tr]{
+    top: 0;
+    right: 0;
+  }
+  [data-direction=br]{
+    right: 0;
+    bottom: 0;
+  }
+  [data-direction=bl]{
+    bottom: 0;
+    left: 0;
   }
 }
 /*webkit-sassui-position-box End*/
