@@ -1,6 +1,6 @@
 {
   "name": "@jswork/wsui-position-box",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Position box for wsui.",
   "homepage": "https://github.com/afeiship/wsui-position-box",
   "author": {
@@ -30,5 +30,12 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "keywords": [
+    "sassui",
+    "position",
+    "box",
+    "direction",
+    "wsui"
+  ]
 }
