@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>wsui-position-box</title>
+  <title>class="wsui-position-box"</title>
   <link rel="stylesheet" href="./style.css">
   <style>
     * {
@@ -23,7 +23,7 @@
       position: relative;
     }
 
-    .box span[data-direction] {
+    .box .wsui-position-box {
       background: lightgreen;
       padding: 10px;
     }
@@ -31,18 +31,18 @@
 </head>
 
 <body>
-  <div class="box wsui-position-box">
-    <span data-direction='top'>top</span>
-    <span data-direction='right'>right</span>
-    <span data-direction='bottom'>bottom</span>
-    <span data-direction='left'>left</span>
-    <span data-direction='center'>center</span>
-    <img data-direction='center' src="circle.png" width="120">
+  <div class="box">
+    <span class="wsui-position-box" data-value='top'>top</span>
+    <span class="wsui-position-box" data-value='right'>right</span>
+    <span class="wsui-position-box" data-value='bottom'>bottom</span>
+    <span class="wsui-position-box" data-value='left'>left</span>
+    <span class="wsui-position-box" data-value='center'>center</span>
+    <img class="wsui-position-box" data-value='center' src="circle.png" width="120">
 
-    <span data-direction='tl'>tl</span>
-    <span data-direction='tr'>tr</span>
-    <span data-direction='br'>br</span>
-    <span data-direction='bl'>bl</span>
+    <span class="wsui-position-box" data-value='tl'>tl</span>
+    <span class="wsui-position-box" data-value='tr'>tr</span>
+    <span class="wsui-position-box" data-value='br'>br</span>
+    <span class="wsui-position-box" data-value='bl'>bl</span>
 
   </div>
 </body>

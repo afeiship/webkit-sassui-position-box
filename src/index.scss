@@ -2,53 +2,51 @@
 $wsui-position-box-options: () !default;
 
 .wsui-position-box {
-  [data-direction] {
-    position: absolute;
-  }
+  position: absolute;
 
-  [data-direction="center"] {
+  &[data-value="center"] {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
 
-  [data-direction="top"],
-  [data-direction="bottom"] {
+  &[data-value="top"],
+  &[data-value="bottom"] {
     left: 50%;
     transform: translateX(-50%);
   }
 
-  [data-direction="left"],
-  [data-direction="right"] {
+  &[data-value="left"],
+  &[data-value="right"] {
     top: 50%;
     transform: translateY(-50%);
   }
 
-  [data-direction="top"] {
+  &[data-value="top"] {
     top: 0;
   }
-  [data-direction="right"] {
+  &[data-value="right"] {
     right: 0;
   }
-  [data-direction="bottom"] {
+  &[data-value="bottom"] {
     bottom: 0;
   }
-  [data-direction="left"] {
+  &[data-value="left"] {
     left: 0;
   }
-  [data-direction="tl"] {
+  &[data-value="tl"] {
     left: 0;
     top: 0;
   }
-  [data-direction="tr"] {
+  &[data-value="tr"] {
     top: 0;
     right: 0;
   }
-  [data-direction="br"] {
+  &[data-value="br"] {
     right: 0;
     bottom: 0;
   }
-  [data-direction="bl"] {
+  &[data-value="bl"] {
     bottom: 0;
     left: 0;
   }
