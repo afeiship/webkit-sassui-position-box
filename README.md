@@ -6,6 +6,10 @@
 [![size][size-image]][size-url]
 [![download][download-image]][download-url]
 
+<center>
+  <img src="https://tva1.sinaimg.cn/large/008i3skNgy1grom0qahx0j30js0jy0tz.jpg" width="800" />
+</center>
+
 ## installation
 ```shell
 npm i @jswork/wsui-position-box
