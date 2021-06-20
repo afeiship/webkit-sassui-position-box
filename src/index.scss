@@ -1,0 +1,56 @@
+/*wsui-position-box Start*/
+$wsui-position-box-options: () !default;
+
+.wsui-position-box {
+  [data-direction] {
+    position: absolute;
+  }
+
+  [data-direction="center"] {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  [data-direction="top"],
+  [data-direction="bottom"] {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  [data-direction="left"],
+  [data-direction="right"] {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  [data-direction="top"] {
+    top: 0;
+  }
+  [data-direction="right"] {
+    right: 0;
+  }
+  [data-direction="bottom"] {
+    bottom: 0;
+  }
+  [data-direction="left"] {
+    left: 0;
+  }
+  [data-direction="tl"] {
+    left: 0;
+    top: 0;
+  }
+  [data-direction="tr"] {
+    top: 0;
+    right: 0;
+  }
+  [data-direction="br"] {
+    right: 0;
+    bottom: 0;
+  }
+  [data-direction="bl"] {
+    bottom: 0;
+    left: 0;
+  }
+}
+/*wsui-position-box End*/

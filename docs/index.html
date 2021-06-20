@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webkit-sassui-position-box</title>
-  <link rel="stylesheet" href="./test.css">
+  <title>wsui-position-box</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0
+    }
+
+    html,
+    body,
+    .box {
+      height: 100%;
+    }
+
+    .box {
+      position: relative;
+    }
+
+    .box span[data-direction] {
+      background: lightgreen;
+      padding: 10px;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="box webkit-sassui-position-box" data-position=relative>
+  <div class="box wsui-position-box">
     <span data-direction='top'>top</span>
     <span data-direction='right'>right</span>
     <span data-direction='bottom'>bottom</span>
@@ -23,4 +46,5 @@
 
   </div>
 </body>
+
 </html>

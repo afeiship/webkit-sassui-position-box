@@ -1,0 +1,63 @@
+/*wsui-position-box Start*/
+.wsui-position-box [data-direction] {
+  position: absolute;
+}
+
+.wsui-position-box [data-direction="center"] {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wsui-position-box [data-direction="top"],
+.wsui-position-box [data-direction="bottom"] {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wsui-position-box [data-direction="left"],
+.wsui-position-box [data-direction="right"] {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wsui-position-box [data-direction="top"] {
+  top: 0;
+}
+
+.wsui-position-box [data-direction="right"] {
+  right: 0;
+}
+
+.wsui-position-box [data-direction="bottom"] {
+  bottom: 0;
+}
+
+.wsui-position-box [data-direction="left"] {
+  left: 0;
+}
+
+.wsui-position-box [data-direction="tl"] {
+  left: 0;
+  top: 0;
+}
+
+.wsui-position-box [data-direction="tr"] {
+  top: 0;
+  right: 0;
+}
+
+.wsui-position-box [data-direction="br"] {
+  right: 0;
+  bottom: 0;
+}
+
+.wsui-position-box [data-direction="bl"] {
+  bottom: 0;
+  left: 0;
+}
+
+/*wsui-position-box End*/
+.test-wsui-position-box {
+  border: 1px solid red;
+}
